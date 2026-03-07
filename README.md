@@ -1,201 +1,170 @@
-# python-mini-project-s-
-🐍 7 Python mini-projects built in 7 days | Beginner-friendly | 100 Days of Code with Harry Series | Covers input, conditionals, loops, functions, randomization &amp; game logic.
-# 🐍 7 Days 7 Python Projects — 100 Days of Code (With Harry Series)
+# 🐍 7 Days 7 Python Projects — With Harry Series
 
-A collection of 7 beginner Python mini-projects built day by day while learning core programming concepts like user input, conditionals, loops, functions, randomization, and more.
+A beginner-friendly Python project series inspired by the popular **"With Harry"** YouTube tutorials. Each day features a fun, practical mini-project to sharpen your Python skills through hands-on coding.
 
 ---
 
-## 📁 Projects Overview
+## 📅 Project Overview
 
-| Day | Project Name | Key Concept |
-|-----|-------------|-------------|
-| Day 1 | Band Name Generator | Input & Strings |
-| Day 2 | Tip Calculator | Arithmetic & f-strings |
-| Day 3 | Treasure Island Adventure | If/Else Conditionals |
-| Day 4 | Rock Paper Scissors | Randomization & Lists |
-| Day 5 | Password Generator | Random + Shuffle |
-| Day 6 | Reeborg Maze Solver | Functions & Loops |
-| Day 7 | Hangman Game | Loops, Lists & Game Logic |
+| Day | Project | Key Concepts |
+|-----|---------|--------------|
+| Day 1 | 🎮 Snake Water Gun Game | Functions, Conditionals, Random |
+| Day 2 | 📁 File Organizer | OS module, File I/O, Shutil |
+| Day 3 | 🔐 Password Manager | File I/O, Clipboard, Loops |
+| Day 4 | 📄 PDF Merger (GUI) | Tkinter, PyPDF, File Dialogs |
+| Day 5 | 🧠 Quiz App | Loops, Lists, Dictionaries |
+| Day 6 | ⌨️ Typing Speed Tester | Time module, String Operations |
+| Day 7 | 💧 Water Reminder | Notifications, Time module |
 
 ---
 
-## 🗂️ Project Details
+## 🗂️ Projects
 
-### Day 1 — Band Name Generator (`day1project.py`)
-A fun interactive program that generates a unique band name by combining your hometown and your pet's name.
+### Day 1 — 🎮 Snake Water Gun Game
+A command-line version of the classic **Snake-Water-Gun** game (the Indian equivalent of Rock-Paper-Scissors). Play against the computer and find out who wins!
 
-**Concepts used:** `print()`, `input()`, f-strings
-
-**How to run:**
+**Run:**
 ```bash
-python day1project.py
+python day1.py
 ```
-**Example:**
-```
-Welcome to a band name generator !!!
-Enter your city name: Mumbai
-Enter your pet name: Bruno
-Your band name could be Mumbai Bruno
-```
+**Dependencies:** None (uses built-in `random`)
 
 ---
 
-### Day 2 — Tip Calculator (`day2project.py`)
-Calculates the total bill after adding a tip percentage and splits it equally among a group of people.
+### Day 2 — 📁 File Organizer
+Automatically **sorts files in your current directory** into categorized folders like PDFs, Images, Videos, Word Files, and Text Files.
 
-**Concepts used:** `int()`, arithmetic operators, f-strings
-
-**How to run:**
+**Run:**
 ```bash
-python day2project.py
+python day2.py
 ```
-**Example:**
-```
-Welcome to the tip calculator
-please enter a bill amount: 100
-please enter % tip you want to give: 15
-enter no of people to divide a bill: 4
-The main bill will be 100 and the amount after tip will be 115.0 and per head amount is 28.75
-```
+**Dependencies:** None (uses built-in `os` and `shutil`)
+
+> ⚠️ Run this in a directory you want to organize — it will move files!
 
 ---
 
-### Day 3 — Treasure Island Adventure (`day3project.py`)
-A text-based adventure game where the player makes choices to find hidden treasure — or face game over!
+### Day 3 — 🔐 Password Manager
+A simple CLI password manager that **saves and retrieves passwords** for different websites. Passwords are copied directly to your clipboard for convenience.
 
-**Concepts used:** `if/elif/else`, nested conditionals, user input
-
-**How to run:**
+**Run:**
 ```bash
-python day3project.py
+python day3.py
 ```
-**Example:**
-```
-Welcome to tressure Island. Your mission is to find the treasure.
-Choose left or right: left
-You want to swim or wait: wait
-Choose a door: blue or yellow or red: yellow
-You won !
-```
-
----
-
-### Day 4 — Rock Paper Scissors (`day4project.py`)
-The classic Rock Paper Scissors game where you compete against the computer, which picks its move randomly.
-
-**Concepts used:** `import random`, `random.choice()`, lists, `if/elif/else`
-
-**How to run:**
+**Install dependencies:**
 ```bash
-python day4project.py
-```
-**Example:**
-```
-Welcome to the Rock Paper Scissor game
-0 for Rock, 1 for Paper and 2 for Scissors: 0
-Your action is: Rock
-Computers's action is: Scissors
-The Result is: You Won!
+pip install pyperclip
 ```
 
 ---
 
-### Day 5 — Password Generator (`day5project.py`)
-Generates a strong, randomized password based on your chosen number of letters, numbers, and symbols.
+### Day 4 — 📄 PDF Merger (GUI)
+A **Tkinter-based desktop app** that lets you select multiple PDF files and merge them into a single PDF with just a few clicks.
 
-**Concepts used:** `import random`, `random.choice()`, `random.shuffle()`, lists, loops, `join()`
-
-**How to run:**
+**Run:**
 ```bash
-python day5project.py
+python day4.py
 ```
-**Example:**
-```
-How many letters do you want? 6
-How many numbers do you want? 3
-How many symbols do you want? 2
-Your password: g3!aX#17mK
-```
-
----
-
-### Day 6 — Reeborg Maze Solver (`day6project.py`)
-A solution for the Reeborg's World maze challenge. The robot navigates a maze by jumping over walls using custom functions.
-
-**Concepts used:** Functions, `while` loops, conditionals, reusable logic
-
-> ⚠️ **Note:** This project runs inside [Reeborg's World](https://reeborg.ca/reeborg.html) — a browser-based Python environment. It will not run as a standalone Python script.
-
-**Logic:**
-```
-- turn_right() is built using three turn_left() calls
-- jump() moves the robot over a wall obstacle
-- The robot keeps moving forward and jumps whenever a wall is in front
-```
-
----
-
-### Day 7 — Hangman Game (`day7_project.py`)
-A fully functional Hangman game with ASCII art stages, a large word bank, lives tracking, and win/lose detection.
-
-**Concepts used:** `import random`, lists, functions, `while` loops, string operations, ASCII art
-
-**How to run:**
+**Install dependencies:**
 ```bash
-python day7_project.py
+pip install pypdf
 ```
-**Example:**
+
+---
+
+### Day 5 — 🧠 Quiz App
+A fun **multiple-choice quiz** on general knowledge topics. Tracks your score and tells you how well you did at the end.
+
+**Run:**
+```bash
+python day5.py
 ```
-************ WELCOME TO THE HANGMAN GAME ************
-********** Guess the letter before you die **********
+**Dependencies:** None
 
-Lives: 6
+---
 
-Progress: _ _ _ _ _ _
+### Day 6 — ⌨️ Typing Speed Tester
+Tests your **typing speed and accuracy** by asking you to type a randomly selected sentence. Reports your WPM (words per minute) and accuracy percentage.
 
-Enter a letter: a
-Your guess was CORRECT!
+**Run:**
+```bash
+python day6.py
+```
+**Dependencies:** None (uses built-in `time` and `random`)
 
-Progress: a _ _ _ _ _
+---
+
+### Day 7 — 💧 Water Reminder
+A simple background script that sends you a **desktop notification** every 30 minutes reminding you to drink water and stay hydrated. 💧
+
+**Run:**
+```bash
+python day7.py
+```
+**Install dependencies:**
+```bash
+pip install plyer
+```
+
+---
+
+## ⚙️ Requirements
+
+- Python 3.x
+- Install all third-party dependencies at once:
+
+```bash
+pip install pyperclip pypdf plyer
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-**Prerequisites:** Python 3.x installed on your machine.
-
+1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-python day1project.py
+git clone https://github.com/your-username/7days7projects.git
+cd 7days7projects
 ```
 
-> Run any project by replacing `day1project.py` with the desired file name.
+2. **Install dependencies:**
+```bash
+pip install pyperclip pypdf plyer
+```
+
+3. **Run any project:**
+```bash
+python day1.py
+```
 
 ---
 
-## 🛠️ Built With
+## 📚 What You'll Learn
 
-- Python 3
-- Standard Library only (`random` module for Days 4, 5, and 7)
-- [Reeborg's World](https://reeborg.ca/reeborg.html) for Day 6
-
----
-
-## 📚 Learning Series
-
-These projects are built as part of the **"100 Days of Code — Python Bootcamp with Harry"** series, covering beginner to advanced Python concepts step by step.
+- Working with Python's standard library (`os`, `shutil`, `time`, `random`)
+- File I/O and text file manipulation
+- Building GUI apps with **Tkinter**
+- Working with PDFs using **PyPDF**
+- Desktop notifications with **Plyer**
+- Clipboard management with **Pyperclip**
+- Game logic, loops, and conditionals
 
 ---
 
-## 📌 Author
+## 🙏 Credits
 
-Built while following the **100 Days of Code – Python (With Harry)** learning journey.
+Inspired by the **"Code With Harry"** Python tutorial series. Check out his channel for more amazing Python content!
+
+- 📺 YouTube: [Code With Harry](https://www.youtube.com/@CodeWithHarry)
+- 🌐 Website: [codewithharry.com](https://www.codewithharry.com)
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+> ⭐ If you found this helpful, consider giving it a star on GitHub!
+
